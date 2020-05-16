@@ -1,47 +1,61 @@
+body {
+    background-color: #2C2141;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
 .business-card {
   max-width: 624px;
-  max-height: 388px;
   background-color: white;
   padding: 32px;
-  display: inline-block;
   border-radius: 16px;
-  margin: auto;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  align-items: flex-start;
+  font-family: Arial;
 }
 
 .business-card__photo {
-  width: 148px;
-  height: 148px;
-}
-
-.page {
-  background-color: rgb(78, 78, 78);
+  max-width: 148px;
+  max-height: 148px;
+  margin-right: 32px;
 }
 
 .business-card__name {
-  font-family: Arial;
   font-size: 36px;
   font-weight: normal;
+  margin: 0;
 }
 
 .business-card__position {
-  font-family: Arial;
   font-size: 18px;
   font-weight: normal;
   font-style: italic;
   color: grey;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .business-card__about {
-  font-family: Arial;
   font-size: 16px;
   font-weight: normal;
+  margin: 0;
+  margin-bottom: 22px;
 }
 
-.business-card__internet {
-    font-family: Arial;
-    font-size: 16px;
-    font-weight: normal;
+.business-card__about--color {
+    color: #ED6D05;
   }
+
+.business-card__internet {
+  font-size: 16px;
+  margin: 0;
+}
+
+.business-card__link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #E20613;
+}
